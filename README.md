@@ -1,5 +1,5 @@
 # Open Source Contributions in Learning <br> from  Imbalanced and Overlapped Data
-Code availability is a crucial aspect for the reproducibility of results. Well-established methods in the field of Imbalanced Learning are commonly found in several open-source implementations. Some of the most popular are [KEEL Software Tool](http://keel.es) and [WEKA workbench](https://www.cs.waikato.ac.nz/ml/weka/), among other [R and Python packages](#packages). However, only a few recent research works provide open-source implementations of novel approaches. This repository identifies existing resources (code and/or data) on the joint-study of Class Imbalance, Class Overlap and Data Complexity. 
+Code availability is a crucial aspect for the reproducibility of results. Well-established methods in the field of Imbalanced Learning are commonly found in several open-source implementations. Some of the most popular are [KEEL Software Tool](http://keel.es) and [WEKA workbench](https://www.cs.waikato.ac.nz/ml/weka/), among other [R and Python packages](#packages). This repository further identifies existing resources (code and/or data) related to the joint-study of Class Imbalance, Class Overlap and Data Complexity. 
 
 <br>
 
@@ -93,7 +93,7 @@ Data Complexity Measures (DCM) are commonly used to characterise the difficulty 
 <br>
 
 ---
-## Imbalanced Data Learning Software
+## <span id="packages">Imbalanced Data Learning Software</span>
 
 - `unbalanced`: Racing for Unbalanced Methods Selection (R) [[Code]](https://cran.r-project.org/web/packages/unbalanced)
 
