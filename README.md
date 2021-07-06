@@ -82,7 +82,7 @@ Data Complexity Measures (DCM) are commonly used to characterise the difficulty 
 
 - **SCoL**: Simulated Complexity Library (R) [[Code]](https://github.com/lpfgarcia/SCoL)[[Garcia2020]](#Garcia2020)
 
-- **mfe**: Meta-Feature Extractor (R) [Code](https://github.com/rivolli/mfe)[[Alcobaca2020]](#Alcobaca2020)
+- **mfe**: Meta-Feature Extractor (R) [[Code]](https://github.com/rivolli/mfe)[[Alcobaca2020]](#Alcobaca2020)
 
 - **pymfe**: Python Meta-Feature Extractor (Python) [[Code]](https://github.com/ealcobaca/pymfe)[[Alcobaca2020]](#Alcobaca2020)
 
