@@ -1,11 +1,11 @@
 # Open Source Contributions in Learning <br> from  Imbalanced and Overlapped Data
 Code availability is a crucial aspect for the reproducibility of results. Well-established methods in the field of Imbalanced Learning are commonly found in several open-source implementations. Some of the most popular are [KEEL Software Tool](http://keel.es) and [WEKA workbench](https://www.cs.waikato.ac.nz/ml/weka/), among other [R and Python packages](#packages). This repository further identifies existing resources (code and/or data) related to the joint-study of Class Imbalance, Class Overlap and Data Complexity. 
 
-<br>
-
-For more information, please refer to:
+For a comprehensive analysis of the joint-effect of Class Imbalance and Overlap, please refer to:
 
 > M. S. Santos, P. H. Abreu, N. Japkowicz, A. Fernández, C. Soares, S. Wilk, J. Santos, On the joint-effect of Class Imbalance and Overlap: A Critical Review, 2021.
+
+Data Complexity Measures with application on Imbalanced and Overlapped domains, as well as Open Directions for future research are thoroughly discussed in:
 
 > M. S. Santos, P. H. Abreu, N. Japkowicz, A. Fernández, J. Santos, A Unifying View of Class Imbalance and Overlap: Key Concepts, Panorama and Open Avenues for Research, 2021.
 
@@ -21,13 +21,13 @@ Well-known data repositories include:
 - OpenML [[Datasets]](https://www.openml.org/search?type=data)
 - KEEL Dataset Repository [[Datasets]](https://sci2s.ugr.es/keel/datasets.php)
 
-Regarding specific data characteristics, KEEL is perhaps the most popular repository. It provides a collection of both standard datasets as well as datasets targeted to imbalance learning, noisy and borderline example detection, as well as singular problems (multi-instance and multi-label datasets) [[Imbalanced Datasets]](https://sci2s.ugr.es/keel/imbalanced.php)
+Regarding specific data characteristics, KEEL is perhaps the most popular repository. It provides a collection of both standard datasets as well as datasets targeted to imbalance learning, noisy and borderline example detection, and singular problems (multi-instance and multi-label datasets) [[Imbalanced Datasets]](https://sci2s.ugr.es/keel/imbalanced.php)
 
 
 ### **Data Generation and Visualisation:**
 - **Data Generation**: Within the scope of artificially generated data, we recommend the [data generator](https://github.com/sysmon37/datagenerator/tree/newsampling) used in [[Wojciechowski2017]](). A comprehensive description of the generator may be found in [this repository](). 
 
-- **Instance Space Analysis**: Regarding the characterisation of datasets comprised in well-known repositories, exploring [MATILDA](https://matilda.unimelb.edu.au/matilda/our-methodology) (Melbourne Algorithm Test Instance Library with Data Analytics ) is an interesting direction. It allows the visualisation of the distribution and diversity of existing benchmark and real-world instances. It also allows the generation of new synthetic test instances at specific locations of the instance space (e.g. real-world-like instances, or instances with controllable properties) [[Code]](https://github.com/andremun/InstanceSpace)[[Munoz2018]](#Munoz2018)
+- **Instance Space Analysis**: Regarding the characterisation of datasets comprised in well-known repositories, exploring [MATILDA](https://matilda.unimelb.edu.au/matilda/our-methodology) (Melbourne Algorithm Test Instance Library with Data Analytics ) is an interesting direction. It allows the visualisation of the distribution and diversity of existing benchmark and real-world instances, and the generation of new synthetic test instances at specific locations of the instance space (e.g. real-world-like instances, or instances with controllable properties) [[Code]](https://github.com/andremun/InstanceSpace)[[Munoz2018]](#Munoz2018)
 
 <br>
 
