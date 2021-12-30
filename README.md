@@ -27,7 +27,7 @@ Regarding specific data characteristics, KEEL is perhaps the most popular reposi
 ### **Data Generation and Visualisation:**
 - **Data Generation**: Within the scope of artificially generated data, we recommend the [data generator](https://github.com/sysmon37/datagenerator/tree/newsampling) used in [[Wojciechowski2017]](). A comprehensive description of the generator may be found in [this repository](). 
 
-- **Instance Space Analysis**: Regarding the characterisation of datasets comprised in well-known repositories, exploring [MATILDA](https://matilda.unimelb.edu.au/matilda/our-methodology) (Melbourne Algorithm Test Instance Library with Data Analytics ) is an interesting direction. It allows the visualisation of the distribution and diversity of existing benchmark and real-world instances, and the generation of new synthetic test instances at specific locations of the instance space (e.g. real-world-like instances, or instances with controllable properties) [[Code]](https://github.com/andremun/InstanceSpace)[[Munoz2018]](#Munoz2018)
+- **Instance Space Analysis (ISA)**: Regarding the characterisation of datasets comprised in well-known repositories, exploring [MATILDA](https://matilda.unimelb.edu.au/matilda/our-methodology) (Melbourne Algorithm Test Instance Library with Data Analytics ) is an interesting direction. It allows the visualisation of the distribution and diversity of existing benchmark and real-world instances, and the generation of new synthetic test instances at specific locations of the instance space (e.g. real-world-like instances, or instances with controllable properties) [[Code]](https://github.com/andremun/InstanceSpace)[[Munoz2018]](#Munoz2018). Another recent tool for ISA is PyHard, which allows to assess the complexity of individual examples within a dataset [[Code]](https://pypi.org/project/pyhard/)[[Paiva2021]](#Paiva2021).
 
 <br>
 
@@ -178,6 +178,9 @@ S. Wojciechowski, S. Wilk, Difficulty factors and preprocessing in imbalanced da
 
 <span id="Munoz2018">`[Munoz2018]`</span>
 M. A. Muñoz, L. Villanova, D. Baatar, K. Smith-Miles, Instance spaces for machine learning classification, Machine Learning 107 (1) (2018) 109–147. [[Link]](https://link.springer.com/article/10.1007/s10994-017-5629-5)
+
+<span id="Paiva2021">`[Paiva2021]`</span>
+P. Y. A. Paiva, K. Smith-Miles, M. G. Valeriano, A. C. Lorena, PyHard: a novel tool for generating hardness embeddings to support data-centric analysis, arXiv preprint arXiv:2109.14430. [[Link]](https://arxiv.org/abs/2109.14430)
 
 
 <span id="Orriols-Puig2010">`[Orriols-Puig2010]`</span>
