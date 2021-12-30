@@ -1,7 +1,7 @@
 # Open Source Contributions in Learning <br> from  Imbalanced and Overlapped Data
 Code availability is a crucial aspect for the reproducibility of results. Well-established methods in the field of Imbalanced Learning are commonly found in several open-source implementations. Some of the most popular are [KEEL Software Tool](http://keel.es) and [WEKA workbench](https://www.cs.waikato.ac.nz/ml/weka/), among other [R and Python packages](#packages). This repository further identifies existing resources (code and/or data) related to the joint-study of Class Imbalance, Class Overlap and Data Complexity. 
 
-For a comprehensive analysis of the joint-effect of Class Imbalance and Overlap, please refer to:
+<!-- For a comprehensive analysis of the joint-effect of Class Imbalance and Overlap, please refer to:
 
 > M. S. Santos, P. H. Abreu, N. Japkowicz, A. Fernández, C. Soares, S. Wilk, J. Santos, On the joint-effect of Class Imbalance and Overlap: A Critical Review, 2021.
 
@@ -10,8 +10,8 @@ Data Complexity Measures with application on Imbalanced and Overlapped domains, 
 > M. S. Santos, P. H. Abreu, N. Japkowicz, A. Fernández, J. Santos, A Unifying View of Class Imbalance and Overlap: Key Concepts, Panorama and Open Avenues for Research, 2021.
 
 <br>
+-->
 
-----
 ## Dataset Benchmarking and Data Generation
 ### **Benchmark Datasets:**
 Well-known data repositories include:
@@ -25,13 +25,11 @@ Regarding specific data characteristics, KEEL is perhaps the most popular reposi
 
 
 ### **Data Generation and Visualisation:**
-- **Data Generation**: Within the scope of artificially generated data, we recommend the [data generator](https://github.com/sysmon37/datagenerator/tree/newsampling) used in [[Wojciechowski2017]](). A comprehensive description of the generator may be found in [this repository](). 
+- **Data Generation**: Within the scope of artificially generated data, we recommend the [data generator](https://github.com/sysmon37/datagenerator/tree/newsampling) used in [[Wojciechowski2017]](). A comprehensive description of the generator may be found in [this repository](https://github.com/miriamspsantos/datagenerator). 
 
 - **Instance Space Analysis (ISA)**: Regarding the characterisation of datasets comprised in well-known repositories, exploring [MATILDA](https://matilda.unimelb.edu.au/matilda/our-methodology) (Melbourne Algorithm Test Instance Library with Data Analytics ) is an interesting direction. It allows the visualisation of the distribution and diversity of existing benchmark and real-world instances, and the generation of new synthetic test instances at specific locations of the instance space (e.g. real-world-like instances, or instances with controllable properties) [[Code]](https://github.com/andremun/InstanceSpace)[[Munoz2018]](#Munoz2018). Another recent tool for ISA is PyHard, which allows to assess the complexity of individual examples within a dataset [[Code]](https://pypi.org/project/pyhard/)[[Paiva2021]](#Paiva2021).
 
-<br>
 
----
 ## Class Overlap-Based Approaches:
 Class Overlap-Based Approaches aim to address class imbalance and overlap simultaneously [[Santos2021a]](#paper1). Despite they often derive from distribution-based approaches to some extent (frequently focused on undersampling or oversampling), their inner operations are more attentive to class overlap. For a comprehensive review on class overlap-based approaches please refer to [[Santos2021a]](#Santos2021a) and [[Vuttipittayamongkol2021]](#Vuttipittayamongkol2021). 
 
@@ -61,6 +59,8 @@ The following approaches include open-source implementations:
 - **EFIS-MOEA**: Ensemble with Feature and Instance Selection with Multi-Objective Evolutionary Algorithm
 [[Code]](https://github.com/aFdezHilario/EFIS-MOEA)[[Fernandez2017]](#Fernandez2017)
 
+- **SPE**: Self-paced Ensemble for Highly Imbalanced Massive Data Classification
+[[Code]](https://github.com/ZhiningLiu1998/self-paced-ensemble)[[Liu2020]](#Liu2020)
 
 - **MOSNS and MOSS**: Minimising Overlapping Selection under No-Sampling and Minimising Overlapping Selection under SMOTE [[Code]](https://ars.els-cdn.com/content/image/1-s2.0-S0169743919306070-mmc1.zip
 )[[Fu2020]](#Fu2020)
@@ -68,9 +68,6 @@ The following approaches include open-source implementations:
 - **ImGrid**: Imbalanced Grid Clusterer [[Code]](https://github.com/langus0/imgrid)[[Lango2017]](#Lango2017)
 
 
-<br>
-
----
 ## Data Complexity Measures
 Data Complexity Measures (DCM) are commonly used to characterise the difficulty of classification tasks through the analysis of certain data characteristics. Existing open-source implementations of complexity measures include:
 
@@ -90,9 +87,8 @@ Data Complexity Measures (DCM) are commonly used to characterise the difficulty 
 
 - **PyHard**: Instance Hardness Python package (Python) [[Code]](https://pypi.org/project/pyhard/)[[Smith2014]](#Smith2014)
 
-<br>
+- **pycol**: Python Class Overlap Library [[Code]](https://github.com/miriamspsantos/pycol)
 
----
 ## <span id="packages">Imbalanced Data Learning Software</span>
 
 - `unbalanced`: Racing for Unbalanced Methods Selection (R) [[Code]](https://cran.r-project.org/web/packages/unbalanced)
@@ -117,37 +113,28 @@ Data Complexity Measures (DCM) are commonly used to characterise the difficulty 
 
 - `undersampling`: A Scala library for undersampling in Imbalanced Classification (Scala) [[Code]](https://github.com/NestorRV/undersampling)
 
-<br>
 
----
 ## References:
 <span id="Santos2021a">`[Santos2021a]`</span>
 M. S. Santos, P. H. Abreu, N. Japkowicz, A. Fernández, C. Soares, S. Wilk, J. Santos, On the joint-effect of Class Imbalance and Overlap: A Critical Review, 2021.
 
-
 <span id="Santos2021b">`[Santos2021b]`</span>
 M. S. Santos, P. H. Abreu, N. Japkowicz, A. Fernández, J. Santos, A Unifying View of Class Imbalance and Overlap Key Concepts, Panorama and Open Avenues for Research, 2021.
-
 
 <span id="Vuttipittayamongkol2021">`[Vuttipittayamongkol2021]`</span>
 P. Vuttipittayamongkol, E. Elyan, A. Petrovski, On the class overlap problem in imbalanced data classification, Knowledge-based systems, 2021. [[Link]](https://www.sciencedirect.com/science/article/abs/pii/S0950705120307607)
 
-
 <span id="Vuttipittayamongkol2018">`[Vuttipittayamongkol2018]`</span>
 P. Vuttipittayamongkol, E. Elyan, A. Petrovski, C. Jayne, Overlap-based undersampling for improving imbalanced data classification, in: International Conference on Intelligent Data Engineering and Automated Learning, Springer, 2018, pp. 689–697. [[Link]](https://link.springer.com/chapter/10.1007/978-3-030-03493-1_72)
-
 
 <span id="Vuttipittayamongkol2020a">`[Vuttipittayamongkol2020a]`</span>
 P. Vuttipittayamongkol, E. Elyan, Improved overlap-based undersampling for imbalanced dataset classification with application to epilepsy and parkinson’s disease, International journal of neural systems, 30(8), 2020. [[Link]](https://www.worldscientific.com/doi/10.1142/S0129065720500434)
 
-
 <span id="Vuttipittayamongkol2020b">`[Vuttipittayamongkol2020b]`</span>
 P. Vuttipittayamongkol, E. Elyan, Neighbourhood-based undersampling approach for handling imbalanced and overlapped data, Information Sciences 509 (2020) 47–70. [[Link]](https://www.sciencedirect.com/science/article/abs/pii/S0020025519308114)
 
-
 <span id="Nekooeimehr2016">`[Nekooeimehr2016]`</span>
 I. Nekooeimehr, S. K. Lai-Yuen, Adaptive semi-unsupervised weighted oversampling (A-SUWO) for imbalanced datasets, Expert Systems with Applications 46 (2016) 405–416. [[Link]](https://www.sciencedirect.com/science/article/abs/pii/S0957417415007356)
-
 
 <span id="Zhu2020">`[Zhu2020]`</span>
 T. Zhu, Y. Lin, Y. Liu, Improving interpolation-based oversampling for imbalanced data learning, Knowledge-Based Systems 187 (2020). [[Link]](https://www.sciencedirect.com/science/article/abs/pii/S0950705119303016)
@@ -158,30 +145,26 @@ M. Koziarski, M. Wozniak, CCR: A combined cleaning and resampling algorithm for 
 <span id="Douzas2019">`[Douzas2019]`</span>
 G. Douzas, F. Bacao, Geometric smote a geometrically enhanced drop-in replacement for smote, Information sciences 501 (2019) 118–135. [[Link]](https://www.sciencedirect.com/science/article/abs/pii/S0020025519305353)
 
-
 <span id="Fernandez2017">`[Fernandez2017]`</span>
 A. Fernández, C. J. Carmona, M. Jose del Jesus, F. Herrera, A pareto-based ensemble with feature and instance selection for learning from multi-class imbalanced datasets, International Journal of neural systems, 27(6), 2017. [[Link]](https://www.worldscientific.com/doi/abs/10.1142/S0129065717500289)
 
+<span id="Liu2020">`[Liu2020]`</span>
+Z. Liu, W. Cao, Z. Gao, J. Bian, H. Chen, Y. Chang, T. Y. Liu. Self-paced ensemble for highly imbalanced massive data classification. 36th IEEE International Conference on Data Engineering (ICDE) (pp. 841-852), 2020.[[Link]](https://www.semanticscholar.org/paper/Self-paced-Ensemble-for-Highly-Imbalanced-Massive-Liu-Cao/46d961048d9b75d2c3ac9bb43eed4e343f8d6460)
 
 <span id="Fu2020">`[Fu2020]`</span>
-G.-H. Fu, Y.-J. Wu, M.-J. Zong, L.-Z. Yi, Feature selection and classification by minimizing overlap degree for class-imbalanced data in metabolomics, Chemometrics and Intelligent Laboratory Systems 196, 2020. [[Link]](https://www.sciencedirect.com/science/article/abs/pii/S0169743919306070)
-
+G. H. Fu, Y. J. Wu, M. J. Zong, L. Z. Yi, Feature selection and classification by minimizing overlap degree for class-imbalanced data in metabolomics, Chemometrics and Intelligent Laboratory Systems 196, 2020. [[Link]](https://www.sciencedirect.com/science/article/abs/pii/S0169743919306070)
 
 <span id="Lango2017">`[Lango2017]`</span>
 M. Lango, D. Brzezinski, S. Firlik, J. Stefanowski, Discovering Minority Sub-clusters and Local Difficulty Factors from Imbalanced Data, International Conference on Discovery Science. Springer, Cham, 2017. [[Link]](https://link.springer.com/chapter/10.1007/978-3-319-67786-6_23)
 
-
-
 <span id="Wojciechowski2017">`[Wojciechowski2017]`</span>
 S. Wojciechowski, S. Wilk, Difficulty factors and preprocessing in imbalanced data sets: an experimental study on artificial data, Foundations of Computing and Decision Sciences 42 (2) (2017) 149–176. [[Link]](https://sciendo.com/article/10.1515/fcds-2017-0007)
-
 
 <span id="Munoz2018">`[Munoz2018]`</span>
 M. A. Muñoz, L. Villanova, D. Baatar, K. Smith-Miles, Instance spaces for machine learning classification, Machine Learning 107 (1) (2018) 109–147. [[Link]](https://link.springer.com/article/10.1007/s10994-017-5629-5)
 
 <span id="Paiva2021">`[Paiva2021]`</span>
 P. Y. A. Paiva, K. Smith-Miles, M. G. Valeriano, A. C. Lorena, PyHard: a novel tool for generating hardness embeddings to support data-centric analysis, arXiv preprint arXiv:2109.14430. [[Link]](https://arxiv.org/abs/2109.14430)
-
 
 <span id="Orriols-Puig2010">`[Orriols-Puig2010]`</span>
 A. Orriols-Puig, N. Macia, T. K. Ho, Documentation for the data complexity library in c++, Universitat Ramon Llull, La Salle 196 (2010) 1–40. [[Link]](https://github.com/nmacia/dcol/blob/master/Documentation/Documentation.pdf)
@@ -197,7 +180,6 @@ L. P. Garcia, A. Rivolli, E. Alcoba ̧ca, A. C. Lorena, A. C. de Carvalho, Boost
 
 <span id="Alcobaca2020">`[Alcobaca2020]`</span>
 E. Alcobaça, F. Siqueira, A. Rivolli, L. P. F. Garcia, J. T. Oliva, A. C. P. L. F. de Carvalho, Mfe: Towards reproducible meta-feature extraction, Journal of Machine Learning Research 21 (111) (2020) 1–5. [[Link]](https://www.jmlr.org/papers/volume21/19-348/19-348.pdf)
-
 
 <span id="Smith2014">`[Smith2014]`</span>
 M. R. Smith, T. Martinez, C. Giraud-Carrier, An instance level analysis of data complexity, Machine learning 95 (2) (2014) 225–256. [[Link]](https://link.springer.com/article/10.1007/s10994-013-5422-z)
